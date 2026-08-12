@@ -2,11 +2,18 @@
 
 > **ADR-2605312700** · Tier-B · L4 Care Tier (sensing/instrument layer) · R0 scaffold (2026-05-31)
 > DID `did:web:kizashi.etzhayyim.com` · Lexicons `com.etzhayyim.kizashi.*`
+> Canonical repository `etzhayyim/actor-kizashi`
 
 The religious-corp's answer to the "futuristic scan pod": step into a
 non-invasive multimodal capture, AI fusion, and receive **early-sign
 awareness + a self-referenced Wellbecoming trajectory** — *not* a
 diagnosis.
+
+Within the Tamaki artificial organism, kizashi is a sensing organ. It may emit
+consented, encrypted observations and non-diagnostic triage suggestions; it
+cannot diagnose, prescribe, or treat. Live modalities remain gated by verified
+hardware, medical-device boundaries, licensed-clinician oversight, and Council
+governance.
 
 **kizashi senses → mitate diagnoses → iyashi treats.** kizashi is the
 instrument layer upstream of all clinical adjudication. It senses the
