@@ -1,4 +1,4 @@
-# com-etzhayyim-kizashi — CLAUDE.md
+# actor-kizashi — CLAUDE.md
 
 ## Identity
 
