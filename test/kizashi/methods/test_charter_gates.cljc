@@ -2,7 +2,7 @@
   "kizashi — constitutional-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.set :as set]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [cheshire.core :as json]))
 
 (def ^:private here (.getParentFile (java.io.File. ^String *file*)))
@@ -70,7 +70,7 @@
 (deftest test-g3-no-diagnosis-or-prescription-field
   (let [forbidden ["diagnosis" "prescription" "icd10" "icd11" "treatment" "medication"]]
     (doseq [f (lex-files)]
-      (let [keys (set (map str/lower-case (property-keys (json/parse-string (slurp f)))))]
+      (let [keys (set (map str/lower (property-keys (json/parse-string (slurp f)))))]
         (doseq [word forbidden]
           (is (not (contains? keys word))
               (str "G3: " (.getName ^java.io.File f) " must not declare a '" word "' field (kizashi senses, never diagnoses)")))))))
